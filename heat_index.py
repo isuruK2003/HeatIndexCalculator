@@ -57,6 +57,7 @@ def calculate_hi(celcius_temperature, relative_humidity):
 
     return round((hi -32) * (5 / 9), 3)
 
+
 if __name__ == '__main__':
     try:
         relative_humidity = get_relative_humidity()
