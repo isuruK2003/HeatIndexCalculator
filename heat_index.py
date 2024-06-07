@@ -13,7 +13,7 @@ def get_relative_humidity():
         if 0 <= humidity <= 100:
             return humidity
         print('>>> Humidity should be with in the range of 0 t 100.')
-
+        
 
 def get_temperature():
     while True:
