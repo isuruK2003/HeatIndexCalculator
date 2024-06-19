@@ -23,12 +23,15 @@ Pseudocode:
 ```
 IF (h < 13) and (80 <= t <= 112) THEN
     hi = hi - ((13 - h) / 4) * ((17 - abs(t - 95)) / 17) ^ 0.5
+END IF
     
 IF (h > 85) and (80 <= t <= 87) THEN
     hi = hi + ((h - 85) / 10) * ((87 - t) / 5)
+END IF
     
 IF hi < 80 THEN
     hi = (t + 61 + (t - 68) * 1.2 + h * 0.094) * 0.5
+END IF
 ```
 # References
 NOAA Heat Index Equation: https://www.wpc.ncep.noaa.gov/html/heatindex_equation.shtml
